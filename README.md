@@ -15,6 +15,15 @@ It was designed by the Seabirds Games team in order to facilitate dependencies m
 
 ## Installation
 
+* Add `nuget.exe` to the PATH to allow the wrapper to call `nuget.exe` easily.
+* Add `NEXUS_SOURCE_NAME` and `NEXUS_SOURCE_URL` to your `~./bash_profile` to skip `-n` && `-s` options. (See below)
+
 ## Usage
 
+```bash
+./manageDependencies -a <ARTIFACT_ID> -v <ARTIFACT_VERSION> -n <NEXUS_SOURCE_NAME> -s <NEXUS_SOURCE_URL>
+```
+
 ## Contribute
+
+Because this is a very simple project, just open an issue and I will give the right access. (short term solution)
