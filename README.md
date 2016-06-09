@@ -40,7 +40,7 @@ It was designed by the Seabirds Games team in order to facilitate dependencies m
 
 ## References
 
-If you have no repository manager, there is a simple way to get one for free and in a small amount of time. Please refer to this blog post to get one : 
+If you have no repository manager, there is a **simple way** to get one **for free** and in a small amount of time. Please refer to this blog post to get one : 
   * [Chris Jenx Sonatype Nexus on Amazon EC2](http://chrisjenx.com/sonatype-nexus-aws-ec2/).
 
 Other usefull references :
@@ -49,4 +49,5 @@ Other usefull references :
 
 ## Contribute
 
-Because this is a very simple project, just open an issue and I will give the right access. (short term solution)
+If you find a bug in the source code or a mistake in the documentation, you can help us improve by submitting an **issue** to our [GitHub Repository](https://github.com/MadJlzz/unity3d-dependencies-management/issues). 
+Even better you can submit a **Pull Request** with a fix. Your custom changes can be crafted in a repository fork and submitted to the [GitHub Repository](https://github.com/MadJlzz/unity3d-dependencies-management/pulls) as a Pull Request.
