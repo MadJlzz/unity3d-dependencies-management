@@ -47,6 +47,10 @@ Other usefull references :
   * [Nuget command line reference](https://docs.nuget.org/consume/command-line-reference) ;
   * [Nuget package explorer to create nuget package with a GUI](https://docs.nuget.org/create/using-a-gui-to-build-packages).
 
+## License
+
+This project license is under GNU GPL 3. Please be aware that Unity's generated files are only here for tests purpose after using `manageDependencies.sh`
+
 ## Contribute
 
 If you find a bug in the source code or a mistake in the documentation, you can help us improve by submitting an **issue** to our [GitHub Repository](https://github.com/MadJlzz/unity3d-dependencies-management/issues). 
