@@ -6,23 +6,46 @@ It was designed by the Seabirds Games team in order to facilitate dependencies m
 
 ## Requirements
 
-* Nuget v3.4.3+
-* Personnal Sonatype Nexus
+* Nuget v3.4.3+ ;
+* Sonatype Nexus server (or any other repository manager that support Nugets packages).
 
 **Notes:**
-> * For Windows, you will need the Git bash emulated terminal.
->   - I recommand [Git for Windows 2.5.0.windows.1](https://git-scm.com/downloads) or above.
+> * For Windows, you will need the Git bash emulated terminal to launch the script ;
+>   - The script was tested with [Git for Windows 2.5.0.windows.1](https://git-scm.com/downloads).
+> * For Mac OS X, you will need to install Mono to be able to execute `.exe` files.
+>   - The script was tested with [Mono 4.2 SR2 (4.2.3.4)](http://www.mono-project.com/download/#download-mac) ;
+>   - :warning: Mono is packaged with a version of Nuget deprecated for this script. You'll need to update the Nuget binary to use this script.
 
 ## Installation
 
-* Add `nuget.exe` to the PATH to allow the wrapper to call `nuget.exe` easily.
+### Windows
+
+* Add `nuget.exe` to the PATH to allow the wrapper call `nuget.exe` easily.
 * Add `NEXUS_SOURCE_NAME` and `NEXUS_SOURCE_URL` to your `~./bash_profile` to skip `-n` && `-s` options. (See below)
+
+### Mac OS X
+
+* Download one of the last version of Nuget (v3.4.3+)
+* Go to `/Library/Frameworks/Mono.framework/[...]/NuGet.exe` and replace it with the last version of Nuget you've downloaded (I suggest to rename the old file).
+
+
+**Notes**
+> * Be sure to name nuget.exe as the old file : `NuGet.exe`. Otherwise you will have to go to `/usr/local/bin/`and edit `mono` to tell him where is the new `nuget.exe` to launch with mono.
 
 ## Usage
 
 ```bash
 ./manageDependencies -a <ARTIFACT_ID> -v <ARTIFACT_VERSION> -n <NEXUS_SOURCE_NAME> -s <NEXUS_SOURCE_URL>
 ```
+
+## References
+
+If you have no repository manager, there is a simple way to get one for free and in a small amount of time. Please refer to this blog post to get one : 
+  * [Chris Jenx Sonatype Nexus on Amazon EC2](http://chrisjenx.com/sonatype-nexus-aws-ec2/).
+
+Other usefull references :
+  * [Nuget command line reference](https://docs.nuget.org/consume/command-line-reference) ;
+  * [Nuget package explorer to create nuget package with a GUI](https://docs.nuget.org/create/using-a-gui-to-build-packages).
 
 ## Contribute
 
