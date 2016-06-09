@@ -1,1 +1,1 @@
-All of the frameworks will be save under Assets/Frameworks/<FrameworkName>
+All of the frameworks will be deployed under Assets/Frameworks/"FrameworkName".
