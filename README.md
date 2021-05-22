@@ -1,3 +1,10 @@
+# Repository Archived
+
+This repository has been archived. It means that I won't continue to update nor fix bugs.
+It has been really usefull back in time when Unity didn't had a way to handle packages for creating easily libraries for our games.
+
+For more informations around Unity's package manager, the documentation is available [here](https://docs.unity3d.com/Manual/upm-ui.html).
+
 # Unity3D dependencies management
 
 `./manageDependencies.sh` is a simple Nuget wrapper script wrote in shell that allow to retrieve dependencies without using Visual Studio.
